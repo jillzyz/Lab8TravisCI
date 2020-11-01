@@ -1,5 +1,7 @@
 package com.example.simpleparadox.listycity;
 
+import androidx.core.widget.TextViewCompat;
+
 import org.junit.jupiter.api.Test;
 
 
@@ -92,5 +94,11 @@ class CityListTest {
         CityList cityList = mockCityList();
 
         assertEquals(1, cityList.countCities());
+    }
+
+    @Test
+    void testCI() {
+        CityList cityList = mockCityList();
+        assertEquals(5, cityList.countCities());
     }
 }
